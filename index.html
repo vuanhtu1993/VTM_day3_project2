@@ -45,18 +45,149 @@
            </div>
        </div>
         <div class="camketvietlam">
+
             <img src="image/cover1.jpg" alt="">
             <div class="dangki">đăng kí</div>
+
         </div>
-        <div class="reason">
+        <div class="reason"> <!--bắt đầu lí do lựa chọn-->
+            <div class="container">
             <div class="lido">Lý do bạn chọn trường 11 năm thành lập </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    Tốp <span>10</span><br>
-                    trường CĐ có chất lượng <p>TỐT NHẤT</p>
-
+                <div class="col-xs-12 col-sm-4 lido-cot1">
+                    <b>Tốp</b> <span>10</span><br>
+                    trường CĐ có chất lượng <br><p>TỐT NHẤT</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 lido-cot1" >
+                    <span>90%</span><b>sinh viên</b><br>
+                    <p>đi làm ngay</p>trong thời gian đi học
+                </div>
+                <div class="col-xs-12 col-sm-4 lido-cot1" >
+                    <span>95%</span><b>sinh viên</b><br>
+                    <p>có việc làm ngay</p>khi ra trường
                 </div>
             </div>
+            </div>
+        </div> <!--kết thúc lí do lựa chọn-->
+
+        <div class="chuyennganh" id="nganh"> <!--bắt đầu chuyên ngành-->
+            <div class="anh-chuyennganh"><img src="image/nganh_nghe.png" alt=""></div>
+            <div class="container">
+            <div class="tittle-chuyennganh">
+                Các ngành đào tạo
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 caodang">
+                    Cao đẳng Y Dược ASEAN:
+                </div>
+                <div class="col-xs-12 col-sm-4" id="caodang1">
+                    <ul>
+                        <li>Dược sĩ </li>
+                        <li>Điều dưỡng </li>
+                    </ul>
+                    <span>Miễn ký túc xá cho HSSV</span>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="caodanghanoi">CAO ĐẲNG HÀ NỘI 11 NGÀNH BAO GỒM</div>
+                <div class="col-xs-12 col-sm-5">
+                <ul>
+                <li>Công nghệ kỹ thuật cơ khí</li>
+                <li>Hàn</li>
+                <li>Điện tử</li>
+                <li>CN điều khiển tự động</li>
+                <li>CN kỹ thuật điện tử viễn thông</li>
+            </ul>
+            </div>
+                <div class="col-xs-12 col-sm-7">
+                <ul>
+                <li>Điện tử viễn thông</li>
+                <li>Hàn</li>
+                <li>Điện tử</li>
+                <li>CN điều khiển tự động</li>
+                <li>CN kỹ thuật điện tử viễn thông</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div> <!--kết thúc chuyên ngành-->
+        <div class="bangcap" id="bangcaps"> <!--bắt đầu bằng cấp-->
+            <div class="container">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="anh-bangcap"><img src="images/bangcap.jpg" alt=""></div>
+                </div>
+            </div>
+        </div> <!--kết thúc bằng cấp-->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="video">
+                    <img src="images/anh-dangki.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">  <!--Form đăng kí bootstrap-->
+                <div class="contact-form">
+                    <div class="contact-title">
+                        Đăng ký xét tuyển trực tuyến
+                    </div>
+                    <form id="dathang-form" method="POST" action="http://tuyensinh2017.vn/contact/index" onsubmit="return Payment()">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 form-group">
+                                <input   class="form-control" name="name" id="name" type="text" placeholder="Họ và tên">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-group">
+                                <input aria-describedby="sizing-addon1"    class="form-control" name="ngaysinh" id="ngaysinh" type="text"  placeholder="Ngày sinh"  onfocus="(this.type='date')">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-group">
+                                <input placeholder="Điện thoại:" id="phone" name="mobile" type="tel" class="form-control" aria-describedby="sizing-addon1" onkeypress="return forceNumber(event);" maxlength="11">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-group">
+                                <input aria-describedby="sizing-addon1"   class="form-control" name="email" id="email" type="email"  placeholder="Email">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-group">
+                                <select aria-describedby="sizing-addon1"    name="thanhpho" id="thanhpho" class="form-control">
+                                    <option value="0">Tỉnh / Thành phố:</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Hải Phòng">Hải Phòng</option>
+                                    <option value="Hưng Yên">Hưng Yên</option>
+                                    <option value="Thái Bình">Thái Bình</option>
+                                    <option value="Khác">Khác</option>
+
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 form-group">
+                                <input aria-describedby="sizing-addon1"   class="form-control" name="content" id="content" type="text"  placeholder="Link facebook">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-group">
+                                <select aria-describedby="sizing-addon1"    name="nganhnghe" id="nganhnghe" class="form-control">
+                                    <option value="1">Ngành đăng ký:</option>
+                                    <option value="Công nghệ kỹ thuật cơ khí">Công nghệ kỹ thuật cơ khí</option>
+                                    <option value="Hàn">Hàn</option>
+                                    <option value="Điện tử">Điện tử</option>
+                                    <option value="CN điều khiển tự động hóa">CN điều khiển tự động hóa</option>
+                                    <option value="CN kỹ thuật điện tử truyền thông">CN kỹ thuật điện tử truyền thông</option>
+                                    <option value="Điện tử dân dụng">Điện tử dân dụng</option>
+                                    <option value="Điện tử công nghiệp">Điện tử công nghiệp</option>
+                                    <option value="Điện dân dụng">Điện dân dụng</option>
+                                    <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                                    <option value="Lập trình máy">Lập trình máy</option>
+                                    <option value="Kế toán Doanh nghiệp">Kế toán Doanh nghiệp</option>
+                                    <option value="Dược sĩ">Dược sĩ</option>
+                                    <option value="Điều dưỡng">Điều dưỡng</option>
+                                </select>
+                            </div>
+                            <input class="form-control" name="title" id="title" type="hidden" value="Thông tin đăng ký được gửi từ
+							hitech">
+
+                        </div>
+                        <button class="btnsubmit" type="submit" value="ĐĂNG KÝ" name="save"><i class="fa fa-paper-plane"></i>đăng ký</button>
+                    </form>
+                </div>
+            </div> <!--end Form đăng kí bootstrap-->
         </div>
+    </div>
+</div>
+
 </body>
 </html>
