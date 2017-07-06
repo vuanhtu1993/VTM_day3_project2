@@ -23,7 +23,7 @@
   text-align: center;
   margin-top: 16px;
   span {
-    font-size: 28px;
+    font-size: 38px;
     font-family: font1;
     color: #0f75bc;
     text-shadow: 2px 1px 5px white;
@@ -160,3 +160,78 @@
   text-align: center;
 }
 /*end link đang kí*/
+
+/*start slide*/
+.person{
+
+  margin: 15px 5px;
+  text-align: center;
+  height: 440px;
+  position: relative;
+  .person-name {
+    background-color: #395e94;
+    height: 155px;
+    color: white;
+    padding-top: 10px;
+  }
+  .person-quote{
+    background-color: #dbdbdb;
+    height: 285px;
+    padding-bottom: 10px;
+
+    padding-top: 100px;
+    font-size: 14px;
+  }
+}
+.slide1{
+  img{
+    position: absolute;
+    top: 14%;
+    left: 18%;
+  }
+}
+span.glyphicon.glyphicon-chevron-left.slick-arrow {
+  font-size: 40px;
+  color: dodgerblue;
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  cursor: pointer;
+}
+span.glyphicon.glyphicon-chevron-right.slick-arrow {
+  font-size: 40px;
+  color: dodgerblue;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  cursor: pointer;
+}
+/*----------------------------------------tuyen sinh-------------------------------------------------*/
+.recruitment-tittle {
+  color: #2d4a74;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial;
+  margin-bottom: 28px;
+}
+.recruit{
+  margin-top: 20px;
+}
+
+.thongbaochung{
+  padding-left: 0;
+}
+.image-recruit{
+  img{  width: 260px;  }
+}
+.thongbao {
+  color: #2d4a74;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+/*----------------------------------------tuyen sinh--------------------------------------------*/
